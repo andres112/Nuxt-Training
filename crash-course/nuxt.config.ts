@@ -3,8 +3,9 @@ export default defineNuxtConfig({
 	modules: ["@nuxt/eslint", "@nuxt/test-utils"],
 	devtools: { enabled: true },
 	app: {
-		pageTransition: { name: "page", mode: "out-in" },
+		pageTransition: { name: "slide-up", mode: "out-in" },
 	},
+	css: ["~/assets/styles/main.scss"],
 	compatibilityDate: "2025-07-15",
 	eslint: {
 		config: {
