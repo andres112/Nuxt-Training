@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 	ssr: true,
 	app: {
-		pageTransition: { name: "slide-up", mode: "out-in" },
+		pageTransition: { name: "fade", mode: "out-in" },
 	},
 	css: ["~/assets/styles/main.scss"],
 	compatibilityDate: "2025-07-15",
