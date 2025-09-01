@@ -1,6 +1,7 @@
+import antfu from "@antfu/eslint-config";
+
 // @ts-check
 import withNuxt from "./.nuxt/eslint.config.mjs";
-import antfu from "@antfu/eslint-config";
 // https://github.com/antfu/eslint-config?tab=readme-ov-file
 
 export default withNuxt(
@@ -37,6 +38,6 @@ export default withNuxt(
 					},
 				],
 			},
-		}
-	)
+		},
+	),
 );

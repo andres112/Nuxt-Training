@@ -1,3 +1,7 @@
+<script setup lang="ts">
+// ...
+</script>
+
 <template>
 	<div>
 		<h1 class="text-3xl font-bold underline">
@@ -7,10 +11,8 @@
 		<NuxtLink
 			to="/about"
 			class="btn-primary"
-		>Go to About Page</NuxtLink>
+		>
+			Go to About Page
+		</NuxtLink>
 	</div>
 </template>
-
-<script setup lang="ts">
-// ...
-</script>

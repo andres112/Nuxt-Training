@@ -15,7 +15,7 @@ export default defineNuxtConfig({
 	},
 	eslint: {
 		config: {
-			standalone: false // Required when using ESLint with antfu
-		}
-	}
+			standalone: false, // Required when using ESLint with antfu
+		},
+	},
 });
