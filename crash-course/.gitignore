@@ -22,3 +22,7 @@ logs
 .env
 .env.*
 !.env.example
+
+# Yarn and npm lock files
+yarn.lock
+package-lock.json

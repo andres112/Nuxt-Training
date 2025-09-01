@@ -77,3 +77,12 @@ Nuxt extends Vue’s lifecycle with app-specific hooks that manage server-side r
 - Use composables (`useAsyncData`, `useFetch`) instead of legacy hooks.
 - SSR runs only once per request; hydration picks up on client.
 - Be mindful: code in `mounted` never runs on the server.
+
+
+## Testing
+https://nuxt.com/docs/4.x/getting-started/testing#end-to-end-testing
+
+When importing @nuxt/test-utils in your vitest config, It is necessary to have "type": "module" specified in your package.json or rename your vitest config file appropriately.
+i.e., vitest.config.m{ts,js}.
+
+It is possible to set environment variables for testing by using the .env.test file.
