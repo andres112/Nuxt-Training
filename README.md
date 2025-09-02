@@ -1,4 +1,5 @@
 # Notes for Nuxt v4+
+
 ## Nuxt crash course
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
@@ -39,8 +40,8 @@ pnpm preview
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
-
 **Official documentation**
+
 - https://nuxt.com/docs/4.x/api
 - https://nuxt.com/docs/4.x/guide
 
@@ -64,6 +65,7 @@ Vue components follow a clear lifecycle from creation to destruction. The main h
 - **unmounted**: Called after component is destroyed.
 
 #### Key Takeaways
+
 - Data fetching = usually in `created` or `mounted`.
 - DOM access = `mounted` or later.
 - Cleanup = `beforeUnmount`.
@@ -107,19 +109,20 @@ Nuxt extends Vue’s lifecycle with app-specific hooks that manage server-side r
 
 - **Vue lifecycle hooks** = per component.
 - **Nuxt lifecycle** = app-level orchestration around routing, SSR, hydration.
-- Nuxt calls Vue hooks *inside* its lifecycle steps.
-- `asyncData` and middleware are Nuxt-only — they run *before* Vue instance creation.
+- Nuxt calls Vue hooks _inside_ its lifecycle steps.
+- `asyncData` and middleware are Nuxt-only — they run _before_ Vue instance creation.
 
 ---
 
 ### Practical Notes
+
 - Use `asyncData` for SSR-safe fetching of page data.
 - Use composables (`useAsyncData`, `useFetch`) instead of legacy hooks.
 - SSR runs only once per request; hydration picks up on client.
 - Be mindful: code in `mounted` never runs on the server.
 
-
 ## Testing
+
 https://nuxt.com/docs/4.x/getting-started/testing#end-to-end-testing
 
 When importing @nuxt/test-utils in your vitest config, It is necessary to have "type": "module" specified in your package.json or rename your vitest config file appropriately.
