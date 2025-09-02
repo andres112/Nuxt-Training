@@ -1,4 +1,58 @@
 /* Main SCSS entry point for global styles */
 /* Tailwind */
 @import "tailwindcss";
-@source "../../**/*.{vue,js,ts,css}";
+@source "../../**/*.{vue,js,ts,css,scss}";
+
+/* === Design tokens (light as default) ===
+   Use semantic tokens so components don't care about the exact color values.
+   You can now use utilities like bg-bg, text-fg, border-muted, text-brand, etc.
+*/
+@theme {
+	/* Colors (OKLCH for sane contrast across themes) */
+	--color-bg: oklch(99% 0 0);
+	/* page background */
+	--color-surface: oklch(98% 0 0);
+	/* cards, headers */
+	--color-muted: oklch(92% 0.02 250);
+	--color-fg: oklch(18% 0 0);
+	/* main text */
+	--color-fg-muted: oklch(45% 0.02 250);
+	--color-brand: oklch(63% 0.23 262);
+
+	/* Typography */
+	--font-sans:
+		ui-sans-serif, system-ui, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+	/* Radii, spacing examples if you want semantic tokens later */
+	--radius-card: 1rem;
+}
+
+/* === Dark theme overrides (class strategy) ===
+   Toggle by adding .dark on <html> or <body>. Tailwind v4 picks these up automatically.
+*/
+.dark {
+	@theme {
+		--color-bg: oklch(16% 0 0);
+		--color-surface: oklch(22% 0 0);
+		--color-muted: oklch(32% 0.02 250);
+		--color-fg: oklch(96% 0 0);
+		--color-fg-muted: oklch(80% 0.02 250);
+		--color-brand: oklch(70% 0.24 262);
+
+		/* fonts/radii usually identical, keep if you want alternate dark fonts */
+	}
+}
+
+/* Optional global “component contracts” powered by @apply (keep it minimal) */
+.container {
+	@apply min-h-screen bg-bg text-fg mx-auto;
+}
+
+.card {
+	@apply rounded-[var(--radius-card)] bg-surface shadow;
+}
+
+.btn-primary {
+	@apply inline-flex items-center gap-2 rounded px-4 py-2 bg-brand text-white hover:opacity-90;
+}

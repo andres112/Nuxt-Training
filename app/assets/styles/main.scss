@@ -1,4 +1,5 @@
 /* Main SCSS entry point for global styles */
 
-/* Transitions */
-@use "./transitions/index";
+@use "./general" as general;
+@use "./typography/index";
+@use "./transitions" as transitions;

@@ -10,7 +10,8 @@
 	},
 
 	"files.associations": {
-		"*.css": "tailwindcss"
+		"*.css": "tailwindcss",
+		"*.scss": "tailwindcss"
 	},
 
 	// Silent the stylistic rules in you IDE, but still auto fix them

@@ -1,0 +1,32 @@
+:root,
+:host {
+	color-scheme: light dark; /* allow UA to pick appropriate form controls, etc. */
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* If you don’t want to use the utility class on <body>, hard-wire here: */
+	background: var(--color-bg);
+	color: var(--color-fg);
+	font-family: var(--font-sans);
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img,
+svg,
+video,
+canvas {
+	display: block;
+	max-width: 100%;
+}
+
+button {
+	font: inherit;
+}
