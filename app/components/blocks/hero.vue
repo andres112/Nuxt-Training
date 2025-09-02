@@ -22,7 +22,7 @@ defineProps<{
     </p>
     <NuxtLink :to="data.link.href" class="Hero__btn btn-primary my-6">
       <!-- Source: https://icones.js.org/collection/tabler -->
-      <Icon :name="data.link.icon" class="text-white text-3xl" />
+      <Icon :name="data.link.icon" size="1.5rem" />
       {{ data.link.label }}
     </NuxtLink>
   </div>

@@ -21,6 +21,7 @@
       </div>
       <div class="NavBar__menu">
         <button class="btn-secondary cursor-pointer">
+          <Icon name="tabler:login" size="1.25rem" />
           Sign In
         </button>
       </div>
