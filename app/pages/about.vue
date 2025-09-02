@@ -4,6 +4,8 @@
 			AboutPage This Page
 		</h2>
 		<NuxtLink to="/" class="btn-primary">
+			<!-- Source: https://icones.js.org/collection/tabler -->
+			<Icon name="tabler:building-airport" class="text-white text-3xl" />
 			Go to Home Page
 		</NuxtLink>
 	</div>
