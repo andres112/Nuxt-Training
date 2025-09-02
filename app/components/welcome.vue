@@ -12,6 +12,7 @@
 			to="/about"
 			class="Welcome__btn btn-primary"
 		>
+			<Icon name="tdesign:bad-laugh" class="text-white text-2xl" />
 			Go to About Page
 		</NuxtLink>
 	</div>
