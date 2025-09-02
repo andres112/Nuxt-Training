@@ -9,7 +9,8 @@
 		"preview": "nuxt preview",
 		"postinstall": "nuxt prepare",
 		"lint": "eslint .",
-		"lint:fix": "eslint . --fix"
+		"lint:fix": "eslint . --fix",
+		"prepare": "husky"
 	},
 	"dependencies": {
 		"nuxt": "^4.0.3",
@@ -22,6 +23,7 @@
 		"@tailwindcss/vite": "^4.1.12",
 		"eslint": "^9.34.0",
 		"eslint-plugin-format": "^1.0.1",
+		"husky": "^9.1.7",
 		"sass-embedded": "^1.91.0",
 		"tailwindcss": "^4.1.12"
 	}
