@@ -1,35 +1,35 @@
 {
-	"name": "nuxt-app",
-	"type": "module",
-	"private": true,
-	"scripts": {
-		"build": "nuxt build",
-		"dev": "nuxt dev -o",
-		"generate": "nuxt generate",
-		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare",
-		"lint": "eslint .",
-		"lint:fix": "eslint . --fix",
-		"prepare": "husky"
-	},
-	"dependencies": {
-		"nuxt": "^4.0.3",
-		"vue": "^3.5.21",
-		"vue-router": "^4.5.1"
-	},
-	"devDependencies": {
-		"@antfu/eslint-config": "^5.2.1",
-		"@iconify-json/tabler": "^1.2.22",
-		"@nuxt/eslint": "1.9.0",
-		"@nuxt/icon": "^2.0.0",
-		"@tailwindcss/vite": "^4.1.12",
-		"eslint": "^9.34.0",
-		"eslint-plugin-format": "^1.0.1",
-		"husky": "^9.1.7",
-		"lint-staged": "^16.1.6",
-		"tailwindcss": "^4.1.12"
-	},
-	"lint-staged": {
-		"*": "pnpm lint"
-	}
+  "name": "nuxt-app",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev -o",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "nuxt": "^4.0.3",
+    "vue": "^3.5.21",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^5.2.1",
+    "@iconify-json/tabler": "^1.2.22",
+    "@nuxt/eslint": "1.9.0",
+    "@nuxt/icon": "^2.0.0",
+    "@tailwindcss/vite": "^4.1.12",
+    "eslint": "^9.34.0",
+    "eslint-plugin-format": "^1.0.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.6",
+    "tailwindcss": "^4.1.12"
+  },
+  "lint-staged": {
+    "*": "pnpm lint"
+  }
 }
