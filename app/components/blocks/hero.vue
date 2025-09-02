@@ -13,7 +13,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="Hero flex flex-col items-center justify-center gap-4 p-6">
+  <div class="Hero flex flex-col items-center justify-center gap-4 p-6 min-h-96">
     <h1 class="Hero__title">
       {{ data.title }}
     </h1>
