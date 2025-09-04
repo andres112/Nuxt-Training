@@ -10,15 +10,30 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepare": "husky"
+    "typecheck": "nuxi typecheck",
+    "prepare": "husky",
+
+    "dep:outdated": "pnpm outdated || true",
+
+    "dep:upgrade:minor": "pnpm dlx npm-check-updates -u --target minor && pnpm install && pnpm dedupe",
+    "dep:upgrade:latest": "pnpm dlx npm-check-updates -u --target latest && pnpm install && pnpm dedupe",
+    "dep:upgrade:core": "pnpm dlx npm-check-updates -u --target latest --filter 'nuxt,@nuxt/*,vue,@vue/*,vite,@vitejs/*' && pnpm install && pnpm dedupe",
+
+    "dep:validate": "pnpm run lint && pnpm run typecheck && pnpm run build",
+    "dep:audit": "pnpm audit --prod --audit-level=moderate || true",
+
+    "dep:flow:minor": "pnpm run dep:upgrade:minor && pnpm run dep:validate && pnpm run dep:audit",
+    "dep:flow:core": "pnpm run dep:upgrade:core && pnpm run dep:validate && pnpm run dep:audit",
+    "dep:flow:latest": "pnpm run dep:upgrade:latest && pnpm run dep:validate && pnpm run dep:audit"
   },
   "dependencies": {
-    "nuxt": "^4.0.3",
+    "nuxt": "^4.1.0",
     "vue": "^3.5.21",
-    "vue-router": "^4.5.1"
+    "vue-router": "^4.5.1",
+    "zod": "^4.1.5"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^5.2.1",
+    "@antfu/eslint-config": "^5.2.2",
     "@iconify-json/tabler": "^1.2.22",
     "@nuxt/eslint": "1.9.0",
     "@nuxt/icon": "^2.0.0",
