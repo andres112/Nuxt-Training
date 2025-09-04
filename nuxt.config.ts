@@ -1,8 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineNuxtConfig({
-	modules: ["@nuxt/eslint", "@nuxt/icon"],
+	modules: ['@nuxt/eslint', '@nuxt/icon'],
 	ssr: true,
 	devtools: { enabled: true },
 	runtimeConfig: {
@@ -12,10 +12,10 @@ export default defineNuxtConfig({
 		},
 	},
 	app: {
-		pageTransition: { name: "fade", mode: "out-in" },
+		pageTransition: { name: 'fade', mode: 'out-in' },
 	},
-	css: ["~/assets/styles/tailwind.css", "~/assets/styles/main.scss"],
-	compatibilityDate: "2025-07-15",
+	css: ['~/assets/styles/tailwind.css', '~/assets/styles/main.scss'],
+	compatibilityDate: '2025-07-15',
 	vite: {
 		plugins: [tailwindcss()],
 	},

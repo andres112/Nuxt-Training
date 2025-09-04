@@ -1,6 +1,6 @@
 /* Main SCSS entry point for global styles */
 /* Tailwind */
-@import "tailwindcss";
+@import 'tailwindcss';
 @source "../../**/*.{vue,js,ts,css,scss}";
 
 /* === Design tokens (light as default) ===
@@ -21,8 +21,8 @@
 
 	/* Typography */
 	--font-sans:
-		ui-sans-serif, system-ui, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
-		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		ui-sans-serif, system-ui, Segoe UI, Roboto, Inter, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji',
+		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
 	/* Radii, spacing examples if you want semantic tokens later */
 	--radius-card: 1rem;
