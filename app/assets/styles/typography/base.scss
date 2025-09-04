@@ -4,75 +4,75 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--color-fg);
-  line-height: 1.2;
-  margin: 0 0 0.5em;
+	color: var(--color-fg);
+	line-height: 1.2;
+	margin: 0 0 0.5em;
 }
 
 h1,
 .h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  margin-bottom: 0.75em;
+	font-size: 3rem;
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	margin-bottom: 0.75em;
 }
 
 h2,
 .h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  margin-bottom: 0.75em;
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	margin-bottom: 0.75em;
 }
 
 h3,
 .h3 {
-  font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  margin-bottom: 0.75em;
+	font-size: 1.75rem;
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	margin-bottom: 0.75em;
 }
 
 h4,
 .h4 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  margin-bottom: 0.75em;
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	margin-bottom: 0.75em;
 }
 
 h5,
 .h5 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  margin-bottom: 0.75em;
+	font-size: 1.25rem;
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	margin-bottom: 0.75em;
 }
 
 h6,
 .h6 {
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  margin-bottom: 0.75em;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	margin-bottom: 0.75em;
 }
 
 p {
-  color: var(--color-fg);
-  line-height: 1.65;
-  margin: 0 0 1em;
+	color: var(--color-fg);
+	line-height: 1.65;
+	margin: 0 0 1em;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 
-  &:hover:not(.btn-primary, .NavBar__link) {
-    text-decoration: underline;
-    transition: color 0.2s ease;
-  }
+	&:hover:not(.btn-primary, .NavBar__link) {
+		text-decoration: underline;
+		transition: color 0.2s ease;
+	}
 }
 
 small {
-  color: var(--color-fg-muted);
+	color: var(--color-fg-muted);
 }
