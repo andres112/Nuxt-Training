@@ -121,6 +121,30 @@ Nuxt extends Vue’s lifecycle with app-specific hooks that manage server-side r
 - SSR runs only once per request; hydration picks up on client.
 - Be mindful: code in `mounted` never runs on the server.
 
+## Environment Variables
+
+- https://nuxt.com/docs/4.x/guide/directory-structure/env
+
+- https://stackoverflow.com/questions/75628147/nuxt-3-docker-kubernetes-environment-variables
+
+```js
+export default defineNuxtConfig({
+  runtimeConfig: {
+    apiSecret: "", // can be overridden by NUXT_API_SECRET environment variable
+    public: {
+      apiBase: "", // can be overridden by NUXT_PUBLIC_API_BASE environment variable
+    }
+  },
+});
+```
+
+Therefore the .env must be
+
+```
+NUXT_API_SECRET=api_secret_token
+NUXT_PUBLIC_API_BASE=https://nuxtjs.org
+```
+
 ## Testing
 
 https://nuxt.com/docs/4.x/getting-started/testing#end-to-end-testing
