@@ -6,9 +6,7 @@ export default defineNuxtConfig({
 	ssr: true,
 	devtools: { enabled: true },
 	runtimeConfig: {
-		mapApiKey: process.env.NUXT_MAP_API_KEY,
 		public: {
-			apiUrl: process.env.NUXT_PUBLIC_BASE_URL,
 		},
 	},
 	app: {

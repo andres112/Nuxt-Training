@@ -153,3 +153,10 @@ When importing @nuxt/test-utils in your vitest config, It is necessary to have "
 i.e., vitest.config.m{ts,js}.
 
 It is possible to set environment variables for testing by using the .env.test file.
+
+## Database using Turso and connected using ORM Drizzle
+
+- https://orm.drizzle.team/docs/get-started/turso-new
+- https://turso.tech/drizzle
+
+**ORM**: Object-Relational Mapping
