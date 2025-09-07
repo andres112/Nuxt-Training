@@ -156,7 +156,9 @@ It is possible to set environment variables for testing by using the .env.test f
 
 ## Database using Turso and connected using ORM Drizzle
 
-- https://orm.drizzle.team/docs/get-started/turso-new
+- https://orm.drizzle.team/docs/get-started/turso-new (here the step by step using turso)
 - https://turso.tech/drizzle
 
 **ORM**: Object-Relational Mapping
+
+**NOTE**: this is not required for NUXT but important to know what was done regarding database
