@@ -12,7 +12,6 @@
 		"lint:fix": "eslint . --fix",
 		"typecheck": "nuxi typecheck",
 		"prepare": "husky",
-
 		"dep:outdated": "pnpm outdated && pwsh -NoProfile -Command \"$CONFIRM = Read-Host -Prompt 'Do you want to continue? (y/n)'; if ($CONFIRM -eq 'y') { exit 0 } else { exit 1 }\"",
 		"dep:upgrade:safe": "pnpm up -L minor && pnpm dedupe",
 		"dep:validate": "pnpm run lint && pnpm run typecheck && pnpm run build",
@@ -20,6 +19,8 @@
 		"dep:flow": "pnpm dep:outdated && pnpm outdated pnpm run dep:upgrade:safe && pnpm run dep:validate && pnpm run dep:audit"
 	},
 	"dependencies": {
+		"@libsql/client": "^0.15.14",
+		"drizzle-orm": "^0.44.5",
 		"nuxt": "^4.1.0",
 		"vue": "^3.5.21",
 		"vue-router": "^4.5.1",
@@ -31,11 +32,13 @@
 		"@nuxt/eslint": "1.9.0",
 		"@nuxt/icon": "^2.0.0",
 		"@tailwindcss/vite": "^4.1.12",
+		"drizzle-kit": "^0.31.4",
 		"eslint": "^9.34.0",
 		"eslint-plugin-format": "^1.0.1",
 		"husky": "^9.1.7",
 		"lint-staged": "^16.1.6",
-		"tailwindcss": "^4.1.12"
+		"tailwindcss": "^4.1.12",
+		"tsx": "^4.20.5"
 	},
 	"lint-staged": {
 		"*": "pnpm lint"
