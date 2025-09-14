@@ -1,3 +1,10 @@
+<script setup lang="ts">
+useSeoMeta({
+	title: 'About Us',
+	description: 'This is the about page of our Nuxt 4 application.',
+});
+</script>
+
 <template>
 	<div class="AboutPage container flex flex-col items-center justify-center gap-4">
 		<BlocksHero
