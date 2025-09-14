@@ -10,6 +10,15 @@ export default defineNuxtConfig({
 		},
 	},
 	app: {
+		head: {
+			title: 'Nuxt 4 Training',
+			meta: [
+				{
+					name: 'description',
+					content: 'This is a sample description for the Nuxt Training application.',
+				},
+			],
+		},
 		pageTransition: { name: 'fade', mode: 'out-in' },
 	},
 	css: ['~/assets/styles/tailwind.css', '~/assets/styles/main.scss'],

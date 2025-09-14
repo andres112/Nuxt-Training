@@ -162,3 +162,58 @@ It is possible to set environment variables for testing by using the .env.test f
 **ORM**: Object-Relational Mapping
 
 **NOTE**: this is not required for NUXT but important to know what was done regarding database
+
+## SEO
+
+Nuxt provides powerful composables for managing SEO and meta tags:
+
+- `useHead`: Fine-grained control over any `<head>` element (title, meta, link, script, etc.).
+- `useSeoMeta`: Simplified API for common SEO meta tags (title, description, Open Graph, Twitter, etc.).
+
+### Basic Usage
+
+**In a page or component script:**
+
+```js
+// For full control
+useHead({
+	title: 'My Page Title',
+	meta: [
+		{ name: 'description', content: 'My page description' },
+		{ property: 'og:title', content: 'My Page Title' },
+		{ property: 'og:description', content: 'My page description' },
+		{ name: 'twitter:card', content: 'summary_large_image' },
+		// ...other meta tags
+	],
+	link: [
+		{ rel: 'canonical', href: 'https://example.com/my-page' }
+	]
+});
+
+// For common SEO tags (recommended for most cases)
+useSeoMeta({
+	title: 'My Page Title',
+	description: 'My page description',
+	ogTitle: 'My Page Title',
+	ogDescription: 'My page description',
+	ogImage: 'https://example.com/og-image.jpg',
+	twitterCard: 'summary_large_image',
+	twitterTitle: 'My Page Title',
+	twitterDescription: 'My page description',
+	twitterImage: 'https://example.com/twitter-image.jpg',
+});
+```
+
+### Best Practices
+
+- Use `useSeoMeta` for most pages to ensure consistent SEO tags.
+- Use `useHead` for advanced or custom head elements.
+- Set a default title/description in `nuxt.config.ts` using the `app.head` property.
+- Use dynamic values (e.g., from props or data) for meta tags on dynamic pages.
+- Always provide unique titles and descriptions for each page.
+
+### Resources
+
+- [Nuxt SEO Guide](https://nuxt.com/docs/guide/directory-structure/app#seo)
+- [useHead API](https://nuxt.com/docs/api/composables/use-head)
+- [useSeoMeta API](https://nuxt.com/docs/api/composables/use-seo-meta)

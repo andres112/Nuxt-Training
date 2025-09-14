@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// Using useHead to set SEO metadata for the Home page
 useHead({
 	title: 'Home Page',
 	meta: [

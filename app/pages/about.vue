@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// Using useSeoMeta composable to set SEO metadata
 useSeoMeta({
 	title: 'About Us',
 	description: 'This is the about page of our Nuxt 4 application.',
