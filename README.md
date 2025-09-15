@@ -217,3 +217,7 @@ useSeoMeta({
 - [Nuxt SEO Guide](https://nuxt.com/docs/guide/directory-structure/app#seo)
 - [useHead API](https://nuxt.com/docs/api/composables/use-head)
 - [useSeoMeta API](https://nuxt.com/docs/api/composables/use-seo-meta)
+
+## ICONS
+
+https://icones.js.org/

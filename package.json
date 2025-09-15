@@ -16,7 +16,7 @@
 		"dep:upgrade:safe": "pnpm up -L minor && pnpm dedupe",
 		"dep:validate": "pnpm run lint && pnpm run typecheck && pnpm run build",
 		"dep:audit": "pnpm audit --prod --audit-level=moderate || true",
-		"dep:flow": "pnpm dep:outdated && pnpm run dep:upgrade:safe && pnpm run dep:validate && pnpm run dep:audit"
+		"dep:flow": "pnpm lint:fix && pnpm dep:outdated && pnpm run dep:upgrade:safe && pnpm run dep:validate && pnpm run dep:audit"
 	},
 	"dependencies": {
 		"@libsql/client": "^0.15.14",
