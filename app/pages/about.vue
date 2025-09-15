@@ -3,6 +3,8 @@
 useSeoMeta({
 	title: 'About Us',
 	description: 'This is the about page of our Nuxt 4 application.',
+	ogTitle: 'About Us - Nuxt 4 Training',
+	ogDescription: 'Learn more about our Nuxt 4 application on this page.',
 });
 </script>
 
