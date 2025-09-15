@@ -220,4 +220,4 @@ useSeoMeta({
 
 ## ICONS
 
-https://icones.js.org/
+https://icones.js.org/ --> this works automatically with @nuxt/icon but for performance is better to install the icon pack from icones.js.org
