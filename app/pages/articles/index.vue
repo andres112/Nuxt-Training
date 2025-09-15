@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { Article } from '~/models/general';
+import type { Article } from '~/interfaces/general';
 
-const { data } = await useFetch('https://jsonplaceholder.typicode.com/posts', {
+const { data } = await useFetch<Article[]>('https://jsonplaceholder.typicode.com/posts', {
 	method: 'get',
 });
 
