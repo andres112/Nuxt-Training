@@ -1,42 +1,16 @@
 <script setup lang="ts">
-const articles = [
-	{
-		id: 1,
-		slug: 'first-article',
-		title: 'First Article',
-		description: 'This is the first article.',
-	},
-	{
-		id: 2,
-		slug: 'second-article',
-		title: 'Second Article',
-		description: 'This is the second article.',
-	},
-	{
-		id: 3,
-		slug: 'third-article',
-		title: 'This is the third article',
-		description: 'This is the third article.',
-	},
-	{
-		id: 4,
-		slug: 'fourth-article',
-		title: 'Fourth Article',
-		description: 'This is the fourth article.',
-	},
-	{
-		id: 5,
-		slug: 'fifth-article',
-		title: 'Fifth Article',
-		description: 'This is the fifth article.',
-	},
-	{
-		id: 6,
-		slug: 'sixth-article',
-		title: 'Sixth Article',
-		description: 'This is the sixth article.',
-	},
-];
+import type { Article } from '~/models/general';
+
+const { data } = await useFetch('https://jsonplaceholder.typicode.com/posts', {
+	method: 'get',
+});
+
+const articles = (data.value as Article[]).map(article => ({
+	id: article.id,
+	slug: article.id.toString(),
+	title: article.title,
+	description: article.body,
+}));
 </script>
 
 <template>
