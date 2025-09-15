@@ -24,14 +24,26 @@ const articles = [
 		title: 'Fourth Article',
 		description: 'This is the fourth article.',
 	},
+	{
+		id: 5,
+		slug: 'fifth-article',
+		title: 'Fifth Article',
+		description: 'This is the fifth article.',
+	},
+	{
+		id: 6,
+		slug: 'sixth-article',
+		title: 'Sixth Article',
+		description: 'This is the sixth article.',
+	},
 ];
 </script>
 
 <template>
-	<div>
+	<div class="container py-8">
 		<h1>Articles Page</h1>
 		<!-- Cards for 4 articles with title, description, and link to article detail page. -->
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 			<NuxtLink
 				v-for="article in articles"
 				:key="article.id"

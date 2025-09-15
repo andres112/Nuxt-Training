@@ -14,8 +14,11 @@
 					</NuxtLink>
 				</div>
 				<div class="NavBar__links">
-					<NuxtLink to="/about" class="NavBar__link h6">
+					<NuxtLink to="/about" class="NavBar__link h6 pr-4">
 						About
+					</NuxtLink>
+					<NuxtLink to="/articles" class="NavBar__link h6">
+						Articles
 					</NuxtLink>
 				</div>
 			</div>
